@@ -26,7 +26,12 @@ const apiTokens = {
 // Request a new token for a given store
 const getApiToken = async (storeKey) => {
   const storeData = storeMap[storeKey];
-  if (!storeData) throw new Error(`Invalid store key: ${storeKey}`);
+  
+  //fix
+  if (!storeData) {
+    console.warn(`Blocked invalid store key attempt: ${storeKey}`);
+    return null; 
+  }
 
   const expiresAtUnix = Math.floor(Date.now() / 1000) + 1800;
 
@@ -346,6 +351,13 @@ router.get("/bc/categories", async (req, res) => {
   const store = req.query.store || "sandbox";
 
   const token = await getValidApiToken(store);
+
+  // ADD THIS CHECK HERE:
+  if (!token) {
+    return res.status(400).send({
+      message: "Invalid store identifier provided."
+    });
+  }
 
   const url = `https://store-${storeMap[store].hash}-1.mybigcommerce.com/graphql`;
   try {
