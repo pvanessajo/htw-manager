@@ -37,11 +37,11 @@ export default function LoginPage() {
         className="flex flex-col justify-center items-center w-full max-w-[325px]">
         <div className="flex items-center justify-center flex-col">
           <img
-            src="https://cdn11.bigcommerce.com/s-et4qthkygq/images/stencil/original/image-manager/htw-admin-favicon-purple.png?t=1685116764"
+            src="https://cdn11.bigcommerce.com/s-wxzymp3frg/images/stencil/original/image-manager/shirts-new-logo.png?t=1771429193"
             alt=""
             className="w-[100px]"
           />
-          <h2 className="text-white font-bold text-3xl">HTW Admin Login</h2>
+          <h2 className="text-white font-bold text-3xl">SFF Admin Login</h2>
         </div>
         <div className="w-full mt-8 flex flex-col gap-4">
           <div>
