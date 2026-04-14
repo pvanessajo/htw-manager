@@ -139,11 +139,11 @@ function Nav() {
     <>
       <header className="bg-white relative w-full h-[86px] z-50 py-4 px-8 flex items-center justify-center shadow-default">
         <div className="w-full max-lg:hidden max-w-screen-2xl flex items-center justify-between">
-          <a href="https://www.heattransferwarehouse.com/">
+          <a href="https://www.shirtsfromfargo.com/">
             <img
               className="w-[125px] h-[auto]"
-              src="https://cdn11.bigcommerce.com/s-et4qthkygq/images/stencil/original/image-manager/heat-transfer-warehouse-logo-2024.png?t=1710348082"
-              alt="Heat Transfer Warehouse Logo"
+              src="https://cdn11.bigcommerce.com/s-wxzymp3frg/images/stencil/original/image-manager/shirts-new-logo.png?t=1771429193"
+              alt="SFF Logo"
             />
           </a>
           <nav className="flex gap-4 items-center">
@@ -259,11 +259,11 @@ function Nav() {
           )}
         </div>
         <div className="lg:hidden w-full flex items-center justify-between">
-          <a href="https://www.heattransferwarehouse.com/">
+          <a href="https://www.shirtsfromfargo.com/">
             <img
               className="w-[100px] h-[auto]"
-              src="https://cdn11.bigcommerce.com/s-et4qthkygq/images/stencil/original/image-manager/heat-transfer-warehouse-logo-2024.png?t=1710348082"
-              alt="Heat Transfer Warehouse Logo"
+              src="https://cdn11.bigcommerce.com/s-wxzymp3frg/images/stencil/original/image-manager/shirts-new-logo.png?t=1771429193"
+              alt="SFF Logo"
             />
           </a>
           <button id="open-nav" aria-label="Open Nav" onClick={toggleMenu}>
