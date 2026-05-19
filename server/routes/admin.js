@@ -4,24 +4,24 @@ const axios = require('axios');
 const router = express.Router();
 
 if (process.env.SERVER_ENV === 'prod') {
-  setInterval(() => getWebHooks('htw'), 60 * 1000);
+ // setInterval(() => getWebHooks('htw'), 60 * 1000);
   setInterval(() => getWebHooks('sff'), 60 * 1000);
-  setInterval(() => getWebHooks('sb'), 60 * 1000);
+  //setInterval(() => getWebHooks('sb'), 60 * 1000);
 }
 
-const stores = ['htw', 'sff', 'sb'];
+const stores = ['sff'];
 
 const storeMap = {
-  sb: {
-    hash: process.env.SANDBOX_HASH,
-    token: process.env.SANDBOX_API_KEY,
-    name: 'Sandbox',
-  },
-  htw: {
-    hash: process.env.STORE_HASH,
-    token: process.env.BG_AUTH_TOKEN,
-    name: 'Heat Transfer Warehouse',
-  },
+ // sb: {
+   // hash: process.env.SANDBOX_HASH,
+  //  token: process.env.SANDBOX_API_KEY,
+    //name: 'Sandbox',
+  //},
+//  htw: {
+  //  hash: process.env.STORE_HASH,
+   // token: process.env.BG_AUTH_TOKEN,
+    //name: 'Heat Transfer Warehouse',
+ // },
   sff: {
     hash: process.env.SFF_STORE_HASH,
     token: process.env.SFF_AUTH_TOKEN,
